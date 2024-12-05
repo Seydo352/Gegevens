@@ -1,0 +1,174 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; 
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 500; 
+    margin-bottom: 15px;
+    color: #222;
+}
+
+/* Navigation */
+nav {
+    width: 100%; /* Make navigation take full width */
+    overflow: hidden; /* Hide overflow if navigation becomes wider than container */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #34495e; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
+}
+
+nav ul li {
+    flex: 1; /* Distribute space equally among list items */
+    text-align: center; /* Center text within list items */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 20px; 
+    display: block;
+    transition: all 0.3s ease; 
+    border-radius: 5px; 
+}
+
+nav ul li a:hover {
+    background-color: #2ecc71; 
+    transform: translateY(-2px); 
+}
+
+/* Buttons */
+button, .btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 24px; 
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500; 
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
+}
+
+button:hover, .btn:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em; 
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px; 
+    overflow: hidden; 
+}
+
+table th, table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #34495e; 
+    color: white;
+    font-weight: 500;
+}
+
+table tr:nth-child(even) {
+    background-color: #f8f8f8; 
+}
+
+table tr:hover {
+    background-color: #f0f0f0; 
+}
+
+/* Form Styling */
+input[type="text"], input[type="email"], textarea {
+    width: 100%; 
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-size: 1em;
+    box-sizing: border-box; 
+}
+
+input[type="submit"] {
+    /* Same styles as other buttons */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #34495e;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) { 
+    nav ul {
+        flex-direction: column; 
+    }
+
+    nav ul li {
+        margin: 10px 0; 
+    }
+
+    nav ul li a {
+        text-align: center; 
+    }
+
+    table {
+        display: block; 
+        overflow-x: auto;
+    }
+
+    .content {
+        padding: 20px; 
+    }
+}
+
+/* Additional Styling for index.php */
+.content {
+    text-align: center;
+    padding: 30px;
+}
+
+.logo-container {
+    margin-bottom: 30px;
+}
+
+.rotating-logo {
+    animation: rotation 2s infinite linear; 
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
